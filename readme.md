@@ -33,8 +33,15 @@ promise.then(function(data) {
    { '$': { xmlns: 'http://www.w3.org/2005/Atom' },
      title: [ 'Example Feed' ] } }
 });
-
 ```
+
+
+## Related
+- [jstransformer](https://github.com/jstransformers/jstransformer): Normalize the API of any jstransformer
+- [xml2js](https://github.com/Leonidas-from-XIV/node-xml2js): Simple XML to JavaScript object converter.
+- [jstransformer-toml](https://github.com/jstransformers/jstransformer-toml): TOML (minimal configuration file format) support for JS Transformers
+- [jstransformer-scss](https://github.com/jstransformers/jstransformer-scss): Transform scss to css using node-sass
+
 
 ## License [![MIT license][license-img]][license-url]
 Copyright (c) 2015 [JSTransformers][jstransformers-url], [Charlike Mike Reagent][contrib-more], [contributors][contrib-graf].  
