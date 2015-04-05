@@ -1,8 +1,6 @@
-# jstransformer-xml2js [npmjs-img][npmjs-url]
+## [![npm][npmjs-img]][npmjs-url] [![mit license][license-img]][license-url] [![build status][travis-img]][travis-url] [![coverage status][coveralls-img]][coveralls-url] [![deps status][daviddm-img]][daviddm-url]
 
-XML support for JS Transformers, transform XML to JSON. Using `xml2js`
-
-[![build status][travis-img]][travis-url] [![coverage status][coveralls-img]][coveralls-url] [![deps status][daviddm-img]][daviddm-url]
+> XML support for JS Transformers, transform XML to JSON. Using `xml2js`
 
 ## Install
 ```
@@ -19,14 +17,14 @@ var xml = require('jstransformer')(require('jstransformer-xml'));
 var opts = {};
 
 var fixture = '<?xml version="1.0" encoding="UTF-8"?><feed xmlns="http://www.w3.org/2005/Atom"><title>Example Feed</title></feed>';
-xml.renderAsync(fixture, opts);
+
+var promise = xml.renderAsync(fixture, opts);
 promise.then(function(data) {
   console.log(data);
   //=> { feed: 
    { '$': { xmlns: 'http://www.w3.org/2005/Atom' },
      title: [ 'Example Feed' ] } }
 });
-
 
 var promise = xml.renderFileAsync('./path/to/config.xml', opts);
 promise.then(function(data) {
@@ -46,17 +44,17 @@ Released under the [`MIT`][license-url] license.
 [npmjs-url]: http://npm.im/jstransformer-xml2js
 [npmjs-img]: https://img.shields.io/npm/v/jstransformer-xml2js.svg?style=flat&label=jstransformer-xml2js
 
-[coveralls-url]: https://coveralls.io/r/tunnckoCore/jstransformer-xml2js?branch=master
-[coveralls-img]: https://img.shields.io/coveralls/tunnckoCore/jstransformer-xml2js.svg?style=flat
+[coveralls-url]: https://coveralls.io/r/jstransformers/jstransformer-xml2js?branch=master
+[coveralls-img]: https://img.shields.io/coveralls/jstransformers/jstransformer-xml2js.svg?style=flat
 
-[license-url]: https://github.com/tunnckoCore/jstransformer-xml2js/blob/master/license.md
+[license-url]: https://github.com/jstransformers/jstransformer-xml2js/blob/master/license.md
 [license-img]: https://img.shields.io/badge/license-MIT-blue.svg?style=flat
 
-[travis-url]: https://travis-ci.org/tunnckoCore/jstransformer-xml2js
-[travis-img]: https://img.shields.io/travis/tunnckoCore/jstransformer-xml2js.svg?style=flat
+[travis-url]: https://travis-ci.org/jstransformers/jstransformer-xml2js
+[travis-img]: https://img.shields.io/travis/jstransformers/jstransformer-xml2js.svg?style=flat
 
-[daviddm-url]: https://david-dm.org/tunnckoCore/jstransformer-xml2js
-[daviddm-img]: https://img.shields.io/david/tunnckoCore/jstransformer-xml2js.svg?style=flat
+[daviddm-url]: https://david-dm.org/jstransformers/jstransformer-xml2js
+[daviddm-img]: https://img.shields.io/david/jstransformers/jstransformer-xml2js.svg?style=flat
 
 [author-gratipay]: https://gratipay.com/tunnckoCore
 [author-twitter]: https://twitter.com/tunnckoCore
@@ -64,7 +62,7 @@ Released under the [`MIT`][license-url] license.
 [author-npmjs]: https://npmjs.org/~tunnckocore
 
 [contrib-more]: http://j.mp/1stW47C
-[contrib-graf]: https://github.com/tunnckoCore/jstransformer-xml2js/graphs/contributors
+[contrib-graf]: https://github.com/jstransformers/jstransformer-xml2js/graphs/contributors
 [jstransformers-url]: https://github.com/jstransformers
 
 ***
