@@ -1,5 +1,8 @@
 
 
+## v0.1.2 / April 10, 2015
+- add input formats
+
 ## v0.1.1 / April 10, 2015
 - run update
 - cleanup
