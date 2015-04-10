@@ -27,7 +27,7 @@
   ],
   "license": {
     "type": "MIT",
-    "url": "https://github.com/tunnckoCore/jstransformer-xml2js/blob/master/license.md"
+    "url": "https://github.com/tunnckoCore/jstransformer-xml2js/blob/master/LICENSE.md"
   },
   "dependencies": {
     "bluebird": "~2.9.24",
