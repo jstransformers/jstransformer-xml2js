@@ -15,6 +15,7 @@ var readFile = bluebird.promisify(fs.readFile);
 var readFileSync = fs.readFileSync;
 
 exports.name = 'xml2js';
+exports.inputFormats = ['xml', 'xml2js'];
 exports.outputFormat = 'json';
 
 exports.renderAsync = function _renderAsync(str, opts) {
