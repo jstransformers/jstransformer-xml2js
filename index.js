@@ -1,5 +1,5 @@
 /**
- * jstransformer-xml2js <https://github.com/tunnckoCore/jstransformer-xml2js>
+ * jstransformer-xml2js <https://github.com/jstransformers/jstransformer-xml2js>
  *
  * Copyright (c) 2015 Charlike Mike Reagent, contributors.
  * Released under the MIT license.
@@ -17,6 +17,6 @@ exports.outputFormat = 'json';
 exports.renderAsync = function _renderAsync(str, opts) {
   var parseString = bluebird.promisify(xml2js.parseString);
   return parseString(str, opts).then(function(data) {
-    return data;
+    return JSON.stringify(data);
   });
 };
