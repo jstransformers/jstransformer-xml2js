@@ -1,5 +1,11 @@
 
 
+## v0.2.0 / April 11, 2015
+- update usage example
+- update tests
+- fix return type
+- cleanup
+
 ## v0.1.2 / April 10, 2015
 - add input formats
 

@@ -1,6 +1,6 @@
 {
   "name": "jstransformer-xml2js",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "XML support for JS Transformers, transform XML to JSON. Using `xml2js`",
   "scripts": {
     "lint": "jshint index.js && jscs index.js --reporter inline",
