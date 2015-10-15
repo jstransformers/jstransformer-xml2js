@@ -30,7 +30,7 @@
     "url": "https://github.com/tunnckoCore/jstransformer-xml2js/blob/master/LICENSE.md"
   },
   "dependencies": {
-    "bluebird": "~2.9.24",
+    "bluebird": "~2.10.2",
     "xml2js": "~0.4.6"
   },
   "devDependencies": {
