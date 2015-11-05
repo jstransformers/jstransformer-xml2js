@@ -1,22 +1,22 @@
-/**
- * jstransformer-xml2js <https://github.com/jstransformers/jstransformer-xml2js>
- *
- * Copyright (c) 2015 Charlike Mike Reagent, contributors.
- * Released under the MIT license.
- */
-
 'use strict';
 
-var xml2js = require('xml2js');
-var bluebird = require('bluebird');
+var parseString = require('xml2js').parseString;
+var Promise = require('promise');
+var extend = require('extend-shallow');
 
 exports.name = 'xml2js';
-exports.inputFormats = ['xml', 'xml2js'];
 exports.outputFormat = 'json';
 
-exports.renderAsync = function _renderAsync(str, opts) {
-  var parseString = bluebird.promisify(xml2js.parseString);
-  return parseString(str, opts).then(function(data) {
-    return JSON.stringify(data);
+exports.renderAsync = function (str, options, locals) {
+  return new Promise(function (resolve, reject) {
+    var opts = extend({}, options, locals, { async: true });
+    parseString(str, opts, function (err, result) {
+      if (err) {
+        reject(err);
+      }
+      else {
+        resolve(JSON.stringify(result));
+      }
+    })
   });
 };
