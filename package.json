@@ -1,41 +1,35 @@
 {
   "name": "jstransformer-xml2js",
-  "version": "0.2.0",
-  "description": "XML support for JS Transformers, transform XML to JSON. Using `xml2js`",
-  "scripts": {
-    "lint": "jshint index.js && jscs index.js --reporter inline",
-    "test": "node test",
-    "test-cov": "istanbul cover test",
-    "test-travis": "istanbul cover test --report lcovonly"
+  "version": "1.0.0",
+  "description": "xml2js support for JSTransformers.",
+  "keywords": [
+    "jstransformer"
+  ],
+  "files": [
+    "index.js"
+  ],
+  "dependencies": {
+    "extend-shallow": "^2.0.1",
+    "promise": "^7.0.4",
+    "xml2js": "^0.4.15"
   },
-  "author": {
-    "name": "Charlike Mike Reagent",
-    "email": "mameto_100@mail.bg",
-    "url": "https://github.com/tunnckoCore"
+  "devDependencies": {
+    "test-jstransformer": "^1.0.0"
+  },
+  "scripts": {
+    "coverage": "test-jstransformer coverage",
+    "test": "test-jstransformer"
+  },
+  "engines": {
+    "node": ">=0.10.36"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/tunnckoCore/jstransformer-xml2js.git"
+    "url": "https://github.com/jstransformers/jstransformer-xml2js.git"
   },
-  "keywords": [
-    "js",
-    "json",
-    "jstransformer",
-    "transform",
-    "xml",
-    "xml-js"
-  ],
-  "license": {
-    "type": "MIT",
-    "url": "https://github.com/tunnckoCore/jstransformer-xml2js/blob/master/LICENSE.md"
+  "author": {
+    "name": "JSTransformers Team",
+    "url": "http://github.com/orgs/jstransformers/people"
   },
-  "dependencies": {
-    "bluebird": "~2.9.24",
-    "xml2js": "~0.4.6"
-  },
-  "devDependencies": {
-    "assertit": "^0.1.0",
-    "istanbul-harmony": "~0.3.1",
-    "jstransformer": "~0.0.0"
-  }
+  "license": "MIT"
 }
