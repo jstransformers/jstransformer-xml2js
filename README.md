@@ -3,7 +3,7 @@
 [xml2js](https://github.com/Leonidas-from-XIV/node-xml2js) support for [JSTransformers](http://github.com/jstransformers).
 
 [![Build Status](https://img.shields.io/travis/jstransformers/jstransformer-xml2js/master.svg)](https://travis-ci.org/jstransformers/jstransformer-xml2js)
-[![Coverage Status](https://img.shields.io/coveralls/jstransformers/jstransformer-xml2js/master.svg)](https://coveralls.io/r/jstransformers/jstransformer-xml2js?branch=master)
+[![Coverage Status](https://img.shields.io/codecov/c/github/jstransformers/jstransformer-xml2js/master.svg)](https://codecov.io/gh/jstransformers/jstransformer-xml2js)
 [![Dependency Status](https://img.shields.io/david/jstransformers/jstransformer-xml2js/master.svg)](http://david-dm.org/jstransformers/jstransformer-xml2js)
 [![NPM version](https://img.shields.io/npm/v/jstransformer-xml2js.svg)](https://www.npmjs.org/package/jstransformer-xml2js)
 
