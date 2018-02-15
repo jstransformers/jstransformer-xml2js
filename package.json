@@ -9,8 +9,8 @@
     "index.js"
   ],
   "dependencies": {
-    "extend-shallow": "^2.0.1",
-    "promise": "^7.0.4",
+    "extend-shallow": "^3.0.2",
+    "promise": "^8.0.1",
     "xml2js": "^0.4.15"
   },
   "devDependencies": {
