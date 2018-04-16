@@ -1,7 +1,5 @@
 # jstransformer-xml2js
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/jstransformers/jstransformer-xml2js.svg)](https://greenkeeper.io/)
-
 [xml2js](https://github.com/Leonidas-from-XIV/node-xml2js) support for [JSTransformers](http://github.com/jstransformers).
 
 [![Build Status](https://img.shields.io/travis/jstransformers/jstransformer-xml2js/master.svg)](https://travis-ci.org/jstransformers/jstransformer-xml2js)
