@@ -1,6 +1,6 @@
 'use strict'
 
-const parseString = require('xml2js').parseString
+const {parseString} = require('xml2js')
 const extend = require('extend-shallow')
 
 exports.name = 'xml2js'
