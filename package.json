@@ -10,7 +10,7 @@
   ],
   "dependencies": {
     "extend-shallow": "^3.0.2",
-    "xml2js": "^0.5.0"
+    "xml2js": "^0.6.0"
   },
   "devDependencies": {
     "test-jstransformer": "^1.0.0",
